@@ -14,10 +14,11 @@ def lol():
         if a[i] < 0:
             null_o = i
 
-    if null_p == 0:
+    if null_p == 0 and null_o == 0:
+        return 0, 0
+    elif null_p == 0 and null_o > 0:
         return 0, null_o + 1
     else:
         return null_p + 1, null_o + 1
 
 print(lol()) # обязательно скобки
-
